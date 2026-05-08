@@ -1,0 +1,17 @@
+{
+  "name": "karta-detstva",
+  "version": "1.0.0",
+  "description": "Гео-ориентированный маркетплейс дополнительного образования Карта детства",
+  "main": "script.js",
+  "scripts": {
+    "start": "start index.html",
+    "test": "echo \"Ошибка: тесты не настроены\" && exit 1"
+  },
+  "keywords": [
+    "marketplace",
+    "education",
+    "nakhodka"
+  ],
+  "author": "Студент",
+  "license": "ISC"
+}

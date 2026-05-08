@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Детства — Находка</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body class="manga-style">
+
+    <header class="bushido-header">
+        <div class="title-block">
+            <h1>КАРТА ДЕТСТВА</h1>
+            <p class="subtitle">ПУТЬ ЗНАНИЙ: ГОРДЫЙ ГОРОД НАХОДКА</p>
+            <blockquote class="code-text">
+                "Истинный путь открывается тому, кто готов искать. Под каждым листом скрыта мудрость."
+            </blockquote>
+        </div>
+    </header>
+
+    <nav class="filter-panel">
+        <div class="filter-group">
+            <label>Возраст:</label>
+            <input type="number" id="ageInput" placeholder="3-17" min="3" max="17">
+        </div>
+        <div class="filter-group">
+            <label>Додзё:</label>
+            <select id="typeSelect">
+                <option value="all">Все направления</option>
+                <option value="Спорт">Путь Силы (Спорт)</option>
+                <option value="Творчество">Путь Кисти (Творчество)</option>
+                <option value="Наука">Путь Разума (Наука)</option>
+            </select>
+        </div>
+        <button id="searchBtn" class="manga-btn">ИСКАТЬ</button>
+    </nav>
+
+    <div id="map"></div>
+
+    <section id="circlesGrid" class="leaf-grid">
+        <!-- Здесь будет 20+ карточек -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
